@@ -6,7 +6,7 @@ sequenceDiagram
 
     user-->>browser: Enter note and click "Save"
 
-    Note over browser: e.preventDefault() prevents page reload.<br/>Browser updates local array and calls redrawNotes() instantly.
+    Note right of browser: e.preventDefault() prevents page reload.<br/>Browser updates local array and calls redrawNotes() instantly.
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
     activate server
