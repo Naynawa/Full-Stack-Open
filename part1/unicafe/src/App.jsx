@@ -1,6 +1,7 @@
 import { useState } from 'react'
 
 const Statistics = (props) => {
+  if(props.total != 0){
     return (
       <div>
       <h2>statistics</h2>
@@ -10,6 +11,12 @@ const Statistics = (props) => {
       <div>all {props.total}</div>
       <div>average {props.average}</div>
       <div>positive {props.positive}</div>
+      </div>
+    )}
+    return(
+      <div>
+        <h2>statistics</h2>
+        <p>No feedback given</p>
       </div>
     )
   }
